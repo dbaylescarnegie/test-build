@@ -1,0 +1,30 @@
+.screen-reader-text {
+  @mixin hide;
+}
+
+.container,
+.container-sm {
+  max-width: 90rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+
+  @media (--md) {
+    padding: 0 3rem;
+  }
+}
+
+.container-sm {
+  max-width: 78rem;
+}
+
+[data-animation="fade-in-up"] {
+  animation: fade-in-up 600ms 300ms ease both;
+}
+
+[data-animate] {
+  animation-play-state: paused;
+}
+
+[data-animate="true"] {
+  animation-play-state: running;
+}

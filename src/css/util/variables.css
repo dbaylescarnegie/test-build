@@ -1,0 +1,50 @@
+/* custom media queries */
+@custom-media --sm (width >= 32em);
+@custom-media --md (width >= 48em);
+@custom-media --lg (width >= 64em);
+@custom-media --xl (width >= 80em);
+
+/* custom selectors */
+@custom-selector :--heading h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6;
+
+:root {
+  /* rgb values */
+  --rgb-white: 255 255 255;
+  --rgb-gray: 88 88 88;
+  --rgb-black: 0 0 0;
+
+  /* colors */
+  --white: rgb(var(--rgb-white));
+  --gray: rgb(var(--rgb-gray));
+  --black: rgb(var(--rgb-black));
+
+  /* fonts */
+  --serif: "";
+  --sans-serif: "";
+
+  /* misc */
+  --box-shadow: 0 0 0.5rem rgba(0 0 0 / 20%);
+  --transition: 300ms ease;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in-up {
+  0% {
+    transform: translateY(1.5rem);
+    opacity: 0;
+  }
+
+  100% {
+    transform: none;
+    opacity: 1;
+  }
+}
