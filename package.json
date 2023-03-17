@@ -15,7 +15,8 @@
     "core-js": "^3.26.1",
     "dom-focus-lock": "^1.1.0",
     "minimodal": "^1.2.2",
-    "sanitize.css": "^13.0.0"
+    "sanitize.css": "^13.0.0",
+    "swiper": "^9.1.1"
   },
   "devDependencies": {
     "@babel/core": "^7.20.5",

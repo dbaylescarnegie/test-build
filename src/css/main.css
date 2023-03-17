@@ -8,6 +8,23 @@
 /* components */
 @import url("components/carousel");
 
+* {
+  /* outline: 1px dashed red; */
+}
+
 body {
   background-color: var(--purple);
+}
+
+.hero {
+  display: flex; 
+  align-items: baseline; 
+  justify-content: space-between; 
+  flex-direction: column;
+}
+
+@media (--lg) {
+  .hero {
+    flex-direction: row;
+  }
 }
