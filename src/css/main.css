@@ -7,3 +7,7 @@
 
 /* components */
 @import url("components/carousel");
+
+body {
+  background-color: var(--purple);
+}
