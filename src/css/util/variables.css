@@ -12,15 +12,18 @@
   --rgb-white: 255 255 255;
   --rgb-gray: 88 88 88;
   --rgb-black: 0 0 0;
+  --rgb-purple: 84 46 142;
 
   /* colors */
   --white: rgb(var(--rgb-white));
   --gray: rgb(var(--rgb-gray));
   --black: rgb(var(--rgb-black));
+  --purple: rgb(var(--rgb-purple));
 
   /* fonts */
-  --serif: "";
-  --sans-serif: "";
+  --serif: "Roboto Slab", serif;
+  /* I'm using the "FigTree" font here in place of "Proxima Nova," as it is not free use */
+  --sans-serif: "FigTree", sans-serif;
 
   /* misc */
   --box-shadow: 0 0 0.5rem rgba(0 0 0 / 20%);
