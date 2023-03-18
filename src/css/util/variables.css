@@ -13,17 +13,26 @@
   --rgb-gray: 88 88 88;
   --rgb-black: 0 0 0;
   --rgb-purple: 84 46 142;
+  --rgb-cyan: 0 182 201;
+  --rgb-light-cyan: 91 198 204;
+  --rgb-orange: 237 116 32;
+  --rgb-magenta: 176 28 135;
 
   /* colors */
   --white: rgb(var(--rgb-white));
   --gray: rgb(var(--rgb-gray));
   --black: rgb(var(--rgb-black));
   --purple: rgb(var(--rgb-purple));
+  --cyan: rgb(var(--rgb-cyan));
+  --light-cyan: rgb(var(--rgb-light-cyan));
+  --orange: rgb(var(--rgb-orange));
+  --magenta: rgb(var(--rgb-magenta));
 
   /* fonts */
   --serif: "Roboto Slab", serif;
   /* I'm using the "FigTree" font here in place of "Proxima Nova," as it is not free use */
   --sans-serif: "FigTree", sans-serif;
+  --quote: "Advent Pro", sans-serif;
 
   /* misc */
   --box-shadow: 0 0 0.5rem rgba(0 0 0 / 20%);

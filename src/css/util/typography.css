@@ -13,8 +13,22 @@ body {
 
 a {
   transition: color var(--transition);
+  border-bottom: 2px solid var(--light-cyan);
+  padding-bottom: 2px;
 
   &:hover {
     text-decoration: none;
   }
+}
+
+.cyan {
+  color: var(--cyan);
+}
+
+.orange {
+  color: var(--orange);
+}
+
+.magenta {
+  color: var(--magenta);
 }

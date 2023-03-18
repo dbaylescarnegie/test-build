@@ -16,17 +16,31 @@
 
 .hero-img {
   transform: scale(1.5);
+
+  @media (--xl) {
+    transform: scale(1.125);
+  }
 }
 
 .card {
   display: flex;
   flex-direction: column;
+  margin: 1rem;
 }
 
 .card-img {
   border-radius: 50%;
   margin: auto;
-  margin-top: 2rem;
+  margin-top: 1rem;
+  width: 100px;
+  height: 100px;
+}
+
+.quote {
+  font-size: 5.25rem;
+  font-family: var(--quote);
+  margin: auto;
+  height: 3rem;
 }
 
 .card-content {
@@ -34,14 +48,29 @@
   text-align: center;
 }
 
-.quote {
-  font-size: 1.125rem;
+.testimonial {
   font-weight: bold;
   font-family: var(--serif);
 }
 
+.student {
+  margin: 2rem;
+}
+
 .name {
   font-weight: bold;
+}
+
+.major {
+  padding: 0rem 0.5rem;
+}
+
+.video-link {
+  font-weight: bold;
+}
+
+.fa-circle-play {
+  padding-left: 0.5rem;
 }
 
 .swiper-slide {
