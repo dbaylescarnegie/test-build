@@ -1,20 +1,23 @@
-<div class="container">
+<div class="container-sm">
   <div class="hero">
     <h1>Our Community</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <p class="hero-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
   </div>
-  <div class="hero-container">
+  <div class="hero-img-container">
     <img src="img/hero_img.jpg" class="hero-img" />
   </div>
   <div class="carousel">
+    <!-- desktop - expanded card -->
     <div class="swiper-slide">
       <div class="card">
-        <img 
-          class="card-img" 
-          src="img/maria_img.png" 
-          alt="Card Image"
-        >
-        <span class="quote cyan">“</span>
+        <div class="card-header">
+          <img 
+            class="card-img" 
+            src="img/maria_img.png" 
+            alt="Card Image"
+          >
+          <span class="quote cyan">“</span>
+        </div>
         <div class="card-content">
           <p class="testimonial">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
           <div class="student">
@@ -28,23 +31,45 @@
         </div>
       </div>
     </div>
+    <!-- desktop - collapsed card -->
     <div class="swiper-slide">
-      <div class="card">
-        <img 
-          class="card-img" 
-          src="img/joseph_img.png" 
-          alt="Card Image"
-        >
-        <span class="quote orange">“</span>
+      <div class="card-collapsed">
+        <div class="card-header-collapsed">
+          <img 
+            class="card-img" 
+            src="img/joseph_img.png" 
+            alt="Card Image"
+          >
+          <span class="quote orange">“</span>  
+        </div>
         <div class="card-content">
-          <p class="testimonial">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-          <p class="name">Maria Valasquez '24</p>
-          <p>Business Administration & Management</p>
-          <a class="name">Watch Maria's Video</a>
+          <!-- <p class="testimonial">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p> -->
+          <p class="name">Joseph Romero '23</p>
+          <span>Respiratory Therapy</span>
+          <!-- <a class="name">Watch Maria's Video</a> -->
         </div>
       </div>
     </div>
+    <!-- desktop - collapsed card -->
     <div class="swiper-slide">
+      <div class="card-collapsed">
+        <div class="card-header-collapsed">
+          <img 
+            class="card-img" 
+            src="img/savannah_img.png"
+            alt="Card Image"
+          >
+          <span class="quote magenta">“</span>  
+        </div>
+        <div class="card-content">
+          <!-- <p class="testimonial">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p> -->
+          <p class="name">Savannah Estrada '25</p>
+          <span>Dental Hygiene</span>
+          <!-- <a class="name">Watch Maria's Video</a> -->
+        </div>
+      </div>
+    </div>
+    <!-- <div class="swiper-slide">
       <div class="card">
         <img 
           class="card-img" 
@@ -59,6 +84,6 @@
           <a class="name">Watch Maria's Video</a>
         </div>
       </div>
-    </div>
+    </div> -->
   </div>
 </div>
