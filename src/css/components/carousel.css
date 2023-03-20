@@ -6,9 +6,60 @@
   @media (--lg) {
     position: absolute;
     flex-direction: row;
-    top: 80%;
+    bottom: 0px;
   }
+}
+
+.swiper-button-group {
+  position: relative;
+  display: flex;
+  z-index: 1;
+  justify-content: space-between;
+  flex-direction: column;
   
+  @media (--lg) {
+    flex-direction: row;
+    padding-top: 8rem;
+  }
+}
+
+.pagination {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: space-between;
+}
+
+.pagination-button-group {
+  display: flex;
+  margin-bottom: 2rem;
+  gap: 0.75rem;
+}
+
+.swiper-button {
+  width: 59px;
+  height: 59px;
+  border-radius: 50%;
+}
+
+.pagination-count {
+  margin-left: 1rem;
+}
+
+.browse-button {
+  padding: 1rem 2rem;
+  margin: 1rem auto;
+  max-width: 16rem;
+
+  @media (--lg) {
+    margin: 0rem 4rem;
+    max-height: 3.675rem;
+  }
+}
+
+.hero-container {
+  @media (--lg) {
+    margin: 3rem 5rem;
+  }
 }
 
 .hero-info {
@@ -22,6 +73,10 @@
 .hero-img-container {
   overflow: hidden;
   margin: 1rem 0rem;
+
+  @media (--lg) {
+    height: 40rem;
+  }
 }
 
 .hero-img {
@@ -36,19 +91,27 @@
   display: flex;
   flex-direction: column;
   margin: 1rem;
-  max-width: 40em;
-
+  min-width: 18.75rem;
+  
   @media (--lg) {
     flex-direction: row;
+    max-width: 44rem;
+    max-height: 34rem;
+    width: 100%;
+    margin: 2rem;
   }
 }
 
 .card-collapsed {
-  display: flex;
-  flex-direction: column;
-  margin: 1rem;
-  max-width: 40em;
-  min-width: 20em;
+  display: none;
+  
+  @media (--lg) {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    max-width: 40em;
+    min-width: 16em;
+  }
 }
 
 .card-header {
@@ -56,7 +119,12 @@
   flex-direction: column; 
   width: 100%; 
   justify-content: flex-start; 
-  margin: 4rem 1rem;
+  margin: 1rem 0rem;
+  
+  @media (--lg) {
+    margin: 4rem 0rem;
+    max-width: 10rem;
+  }
 }
 
 .card-header-collapsed {
@@ -81,14 +149,25 @@
   font-size: 5.25rem;
   font-family: var(--quote);
   margin: auto;
-  height: 3rem;
+  height: 2rem;
+  padding-right: 1rem;
 
   @media (--lg) {
+    height: 3rem;
     margin: 0px auto;
   }
 }
 
 .card-content {
+  margin: 1rem;
+  text-align: center;
+
+  @media (--lg) {
+    text-align: left;
+  }
+}
+
+.card-content-collapsed {
   margin: 1rem;
   text-align: center;
 }
@@ -101,16 +180,22 @@
   @media (--lg) {
     text-align: left;
     font-size: 1.5rem;
+    margin-right: 5rem;
   }
 }
 
 .student {
-  margin: 2rem;
+  margin: 1rem;
   display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 18px;
 
   @media (--lg) {
-    margin: 0rem;
+    margin: 1rem 0rem;
     text-align: left;
+    font-size: 1rem;
+    flex-direction: row;
   }
 }
 
@@ -118,11 +203,21 @@
   font-weight: bold;
 }
 
-.major {
-  padding: 0rem 0.5rem;
+.pipe {
+  visibility: hidden;
+  height: 0.5rem;
 
   @media (--lg) {
-    padding: 0px;
+    visibility: visible;
+    padding: 0rem 1rem;
+  }
+}
+
+.major {
+  /* padding: 0rem 0.5rem; */
+
+  @media (--lg) {
+    /* padding: 0px; */
   }
 }
 
@@ -146,5 +241,4 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 1em auto;
 }

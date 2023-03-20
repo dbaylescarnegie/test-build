@@ -17,6 +17,7 @@
   --rgb-light-cyan: 91 198 204;
   --rgb-orange: 237 116 32;
   --rgb-magenta: 176 28 135;
+  --rgb-light-magenta: 176 28 135;
 
   /* colors */
   --white: rgb(var(--rgb-white));
@@ -27,6 +28,7 @@
   --light-cyan: rgb(var(--rgb-light-cyan));
   --orange: rgb(var(--rgb-orange));
   --magenta: rgb(var(--rgb-magenta));
+  --light-magenta: rgb(var(--rgb-light-magenta));
 
   /* fonts */
   --serif: "Roboto Slab", serif;

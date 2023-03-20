@@ -1,4 +1,5 @@
 // dependencies
+import 'swiper';
 
 // utilities
 import './util/animate';

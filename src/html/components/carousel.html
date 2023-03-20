@@ -1,12 +1,14 @@
 <div class="container-sm">
-  <div class="hero">
-    <h1>Our Community</h1>
-    <p class="hero-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+  <div class="hero-container">
+    <div class="hero">
+      <h1>Our Community</h1>
+      <p class="hero-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+    <div class="hero-img-container">
+      <img src="img/hero_img.jpg" class="hero-img" />
+    </div>
   </div>
-  <div class="hero-img-container">
-    <img src="img/hero_img.jpg" class="hero-img" />
-  </div>
-  <div class="carousel">
+  <div class="carousel swiper-container">
     <!-- desktop - expanded card -->
     <div class="swiper-slide">
       <div class="card">
@@ -21,8 +23,9 @@
         <div class="card-content">
           <p class="testimonial">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
           <div class="student">
-            <p class="name">Maria Valasquez '24</p>
-            <p class="major">Business Administration & Management</p>
+            <span class="name">Maria Valasquez '24</span>
+            <span class="pipe">|</span>
+            <span class="major">Business Administration & Management</span>
           </div>
           <a class="video-link">
             Watch Maria's Video 
@@ -42,11 +45,11 @@
           >
           <span class="quote orange">“</span>  
         </div>
-        <div class="card-content">
+        <div class="card-content-collapsed">
           <!-- <p class="testimonial">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p> -->
           <p class="name">Joseph Romero '23</p>
           <span>Respiratory Therapy</span>
-          <!-- <a class="name">Watch Maria's Video</a> -->
+          <!-- <a class="name">Watch Joseph's Video</a> -->
         </div>
       </div>
     </div>
@@ -61,29 +64,29 @@
           >
           <span class="quote magenta">“</span>  
         </div>
-        <div class="card-content">
+        <div class="card-content-collapsed">
           <!-- <p class="testimonial">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p> -->
           <p class="name">Savannah Estrada '25</p>
           <span>Dental Hygiene</span>
-          <!-- <a class="name">Watch Maria's Video</a> -->
+          <!-- <a class="name">Watch Savannah's Video</a> -->
         </div>
       </div>
     </div>
-    <!-- <div class="swiper-slide">
-      <div class="card">
-        <img 
-          class="card-img" 
-          src="img/savannah_img.png" 
-          alt="Card Image"
-        >
-        <span class="quote magenta">“</span>
-        <div class="card-content">
-          <p class="testimonial">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-          <p class="name">Maria Valasquez '24</p>
-          <p>Business Administration & Management</p>
-          <a class="name">Watch Maria's Video</a>
-        </div>
+  </div>
+  <div class="swiper-button-group">
+    <div class="pagination">
+      <div class="pagination-button-group">
+        <button class="swiper-button swiper-button-prev">
+          <i class="fa-solid fa-arrow-left"></i>
+        </button>
+        <button class="swiper-button swiper-button-next">
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
       </div>
-    </div> -->
+      <p class="pagination-count">1/4</p>
+    </div>
+    <button class="browse-button">
+      Browse All Stories
+    </button>
   </div>
 </div>
