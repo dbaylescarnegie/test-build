@@ -5,27 +5,30 @@
       <p class="hero-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
     </div>
     <div class="hero-img-container">
-      <img src="img/hero_img.jpg" class="hero-img" />
+      <img 
+        src="img/hero_img.jpg" 
+        class="hero-img"
+        alt="Hero image" />
     </div>
   </div>
   <div class="carousel swiper-container">
     <!-- desktop - expanded card -->
-    <div class="swiper-slide">
+    <div class="swiper-slide" aria-label="Student card">
       <div class="card">
         <div class="card-header">
           <img 
             class="card-img" 
             src="img/maria_img.png" 
-            alt="Card Image"
+            alt="Student image"
           >
           <span class="quote cyan">“</span>
         </div>
         <div class="card-content">
           <p class="testimonial">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
           <div class="student">
-            <span class="name">Maria Valasquez '24</span>
-            <span class="pipe">|</span>
-            <span class="major">Business Administration & Management</span>
+            <p class="name">Maria Valasquez '24</p>
+            <p class="pipe">|</p>
+            <p class="major">Business Administration & Management</p>
           </div>
           <a class="video-link">
             Watch Maria's Video 
@@ -35,39 +38,39 @@
       </div>
     </div>
     <!-- desktop - collapsed card -->
-    <div class="swiper-slide">
+    <div class="swiper-slide" aria-label="Student card">
       <div class="card-collapsed">
         <div class="card-header-collapsed">
           <img 
             class="card-img" 
             src="img/joseph_img.png" 
-            alt="Card Image"
+            alt="Student image"
           >
           <span class="quote orange">“</span>  
         </div>
         <div class="card-content-collapsed">
           <!-- <p class="testimonial">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p> -->
-          <p class="name">Joseph Romero '23</p>
-          <span>Respiratory Therapy</span>
+          <p class="name" aria-label="Student name">Joseph Romero '23</p>
+          <p class="major" aria-label="Student major">Respiratory Therapy</p>
           <!-- <a class="name">Watch Joseph's Video</a> -->
         </div>
       </div>
     </div>
     <!-- desktop - collapsed card -->
-    <div class="swiper-slide">
+    <div class="swiper-slide" aria-label="Student card">
       <div class="card-collapsed">
         <div class="card-header-collapsed">
           <img 
             class="card-img" 
             src="img/savannah_img.png"
-            alt="Card Image"
+            alt="Student image"
           >
           <span class="quote magenta">“</span>  
         </div>
         <div class="card-content-collapsed">
           <!-- <p class="testimonial">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p> -->
-          <p class="name">Savannah Estrada '25</p>
-          <span>Dental Hygiene</span>
+          <p class="name" aria-label="Student name">Savannah Estrada '25</p>
+          <p class="major" aria-label="Student major">Dental Hygiene</p>
           <!-- <a class="name">Watch Savannah's Video</a> -->
         </div>
       </div>
@@ -76,16 +79,25 @@
   <div class="swiper-button-group">
     <div class="pagination">
       <div class="pagination-button-group">
-        <button class="swiper-button swiper-button-prev">
+        <button 
+          class="swiper-button swiper-button-prev" 
+          aria-label="Pagination forward button"
+        >
           <i class="fa-solid fa-arrow-left"></i>
         </button>
-        <button class="swiper-button swiper-button-next">
+        <button 
+          class="swiper-button swiper-button-next"
+          aria-label="Pagination forward button"
+        >
           <i class="fa-solid fa-arrow-right"></i>
         </button>
       </div>
       <p class="pagination-count">1/4</p>
     </div>
-    <button class="browse-button">
+    <button 
+      class="browse-button"
+      aria-label="Browse All Stories button"
+    >
       Browse All Stories
     </button>
   </div>

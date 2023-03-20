@@ -13,7 +13,7 @@
 .swiper-button-group {
   position: relative;
   display: flex;
-  z-index: 1;
+  z-index: 0;
   justify-content: space-between;
   flex-direction: column;
   
@@ -176,6 +176,7 @@
   font-weight: bold;
   font-family: var(--serif);
   text-align: center;
+  margin: 0.5rem 0rem;
 
   @media (--lg) {
     text-align: left;
@@ -185,14 +186,12 @@
 }
 
 .student {
-  margin: 1rem;
   display: flex;
   flex-direction: column;
   text-align: center;
   font-size: 18px;
 
   @media (--lg) {
-    margin: 1rem 0rem;
     text-align: left;
     font-size: 1rem;
     flex-direction: row;
@@ -201,14 +200,15 @@
 
 .name {
   font-weight: bold;
+  margin-bottom: 0rem;
 }
 
 .pipe {
-  visibility: hidden;
+  display: none;
   height: 0.5rem;
 
   @media (--lg) {
-    visibility: visible;
+    display: block;
     padding: 0rem 1rem;
   }
 }
@@ -223,8 +223,11 @@
 
 .video-link {
   font-weight: bold;
-
+  cursor: pointer;
+  
   @media (--lg) {
+    position: relative;
+    z-index: 1;
     text-align: left;
   }
 }
